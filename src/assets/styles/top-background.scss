@@ -18,7 +18,7 @@
     }
     > div:first-of-type  {
         width: 55vw;
-        left: -30vw;
+        left: -10vw;
         top: calc((1000px - 40vw)/2);
         transform: rotate(180deg);
         -ms-transform: rotate(180deg); /* IE 9 */
@@ -28,7 +28,7 @@
     }
     > div:last-of-type  {
         width: 60vw;
-        right: -20vw;
+        right: 0;
         top: calc((500px - 70vw)/2);
     }
 }
