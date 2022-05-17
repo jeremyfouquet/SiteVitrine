@@ -1,0 +1,65 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/top-background.scss';
+
+#menu-two-section-one {
+    padding: 6rem calc((100vw - 1100px)/2);
+    .use {
+        justify-content: space-between;
+    }
+}
+
+#menu-two-section-two{
+    background: $medium-blue;
+    padding: 6rem calc((100vw - 1200px)/2);
+}
+
+#menu-two-section-four {
+    padding: 6rem calc((100vw - 1200px)/2);
+    .menu-two-section-four {
+        justify-content: space-between;
+    }
+}
+
+#menu-two-section-five {
+    padding: 0 0 6rem 0;
+    .border-frame {
+        height: 2px;
+        background: $blue;
+    }
+    .menu-two-section-five {
+        padding: 0 calc((100vw - 1000px)/2);
+        justify-content: space-between;
+        &>div {
+            margin-bottom: 60px;
+            margin-bottom: 60px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+        .card-doc {
+            cursor: pointer;
+            border-radius: 30px;
+            width: 120px;
+            height: 120px;
+            background: white;
+            box-shadow: 0px 2px 16px 0px rgba(53,63,79,0.15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+        p {
+            color: $blue;
+            font-size: 21px;
+            line-height: 26.4px;
+            font-weight: 800;
+        }
+    }
+}
+
+#menu-two-section-seven {
+    padding: 6rem calc((100vw - 1200px)/2);
+    .menu-two-section-seven {
+        justify-content: space-around;
+    }
+}

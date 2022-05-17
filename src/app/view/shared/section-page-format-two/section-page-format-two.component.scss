@@ -1,0 +1,35 @@
+@import 'src/assets/styles/colors.scss';
+
+#section-page-format-two {
+    align-items: center;
+    padding: 6rem calc((100vw - 1200px)/2);
+    .text-section {
+        p {
+            margin-top: 30px;
+            padding: 0;
+            font-size: 18px;
+            line-height: 26.9px;
+        }
+        .number-puce {
+            font-size: 88px;
+            line-height: 107px;
+            font-weight: 800;
+        }
+        h2 {
+            margin: 0;
+        }
+        li {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: 500;
+            span {
+                font-size: 21px;
+                font-weight: 800;
+            }
+        }
+    }
+    .img {
+        width:479px;
+        height: 510px;
+    }
+}

@@ -1,0 +1,120 @@
+<div
+id="top-background"
+class="row">
+    <div id="form-blue"></div>
+    <div id="form-red"></div>
+</div>
+
+<app-intro-page
+[introPageContaint]="introPageContaint"
+></app-intro-page>
+
+<div
+id="menu-two-section-one"
+class="row text-center">
+    <div
+    class="col-12 row use">
+        <ng-container
+        *ngFor="let card of cardOne">
+            <app-vertical-card
+            class="col-lg-6"
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>
+
+<div
+id="menu-two-section-two"
+class="row text-center">
+    <h2
+    class="col-12 pb-4"
+    [translate]="'_Menu_Two_Section_Two_Title_'"></h2>
+    <video controls class="col-8" height="450">
+        <source src="./"
+                type="video/webm">
+
+        <source src="./"
+                type="video/mp4">
+        {{'_Video_Not_Work_' | translate}}
+    </video>
+</div>
+
+<app-section-page-format-two
+[sectionTwoData]="DataOne">
+</app-section-page-format-two>
+
+<app-section-page-format-two
+[sectionTwoData]="DataTwo">
+</app-section-page-format-two>
+
+<app-section-page-format-two
+[sectionTwoData]="DataThree">
+</app-section-page-format-two>
+
+<div
+id="menu-two-section-four"
+class="row text-center">
+    <h2
+    class="col-12 pb-5"
+    [translate]="'_Menu_Two_Section_Four_Title_'"></h2>
+    <div
+    class="col-12 row menu-two-section-four">
+        <ng-container
+        *ngFor="let card of cardTwo">
+            <app-vertical-card
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>
+
+<div
+id="menu-two-section-five"
+class="text-center">
+    <div
+    class="pb-5 row justify-content-center align-items-center">
+        <div
+        class="col border-frame"></div>
+        <h2
+        class='col'
+        [translate]="'_Menu_Two_Section_Five_Title_'"></h2>
+        <div
+        class="col border-frame"></div>
+    </div>
+    <div
+    class="row menu-two-section-five">
+        <div
+        class="col-sm-4"
+        *ngFor="let card of cardThree">
+            <div
+            class="card-doc">
+                <img
+                [src]="card.src"
+                [alt]="card.alt | translate">
+            </div>
+            <p
+            class="Roboto-font"
+            [translate]="card.alt"></p>
+        </div>
+    </div>
+</div>
+
+<app-intro-page
+[introPageContaint]="sectionSixContaint"
+></app-intro-page>
+
+<div
+id="menu-two-section-seven"
+class="row text-center">
+    <h2
+    class="col-12 pb-5"
+    [translate]="'_Menu_Two_Section_Seven_Title_'"></h2>
+    <div
+    class="col-12 row menu-two-section-seven">
+        <ng-container
+        *ngFor="let card of cardSeven">
+            <app-vertical-card
+            class="col-lg-6"
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>

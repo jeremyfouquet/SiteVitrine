@@ -1,0 +1,61 @@
+<div
+[style.margin]="containtAndStyle.marginTop"
+[style.max-width]="containtAndStyle.style.cardWidth"
+[style.height]="containtAndStyle.style.cardHeight"
+[style.background]="containtAndStyle.style.background ? containtAndStyle.style.background : 'none'"
+[style.border-radius]="containtAndStyle.style.borderRadius ? containtAndStyle.style.borderRadius : 'none'"
+[style.padding-top]="containtAndStyle.style.justifyContent ? containtAndStyle.style.justifyContent[1] : 'none'"
+[style.padding-bottom]="containtAndStyle.style.justifyContent ? containtAndStyle.style.justifyContent[1] : 'none'"
+class="col justify-content-center align-items-center d-flex flex-column position-relative"
+[class.boxShadow]="containtAndStyle.style.boxShadow"
+[class.justify-content-center]="!containtAndStyle.style.justifyContent"
+[class.justify-content-between]="containtAndStyle.style.justifyContent && containtAndStyle.style.justifyContent[0] === 'between'"
+>
+    <img
+    *ngIf="containtAndStyle.imgTop"
+    class="img-top"
+    [src]="containtAndStyle.imgTop"
+    [alt]="containtAndStyle.title | translate">
+    <div
+    *ngIf="containtAndStyle.imgTop"
+    style="height: 4rem;"></div>
+    <h2
+    *ngIf="containtAndStyle.hTitle === 'h2'"
+    [style.margin]="containtAndStyle.style.hMargin ? containtAndStyle.style.hMargin : 'none'"
+    [translate]="containtAndStyle.title"></h2>
+    <div
+    class="vertical-card-img"
+    *ngIf="containtAndStyle.src && containtAndStyle.alt"
+    [style.height]="containtAndStyle.style.imgHeight">
+        <img
+        [src]="containtAndStyle.src"
+        [alt]="containtAndStyle.alt | translate">
+    </div>
+    <h3
+    *ngIf="containtAndStyle.hTitle === 'h3'"
+    [style.margin]="containtAndStyle.style.hMargin ? containtAndStyle.style.hMargin : 'none'"
+    [translate]="containtAndStyle.title"></h3>
+    <p
+    *ngIf="containtAndStyle.text"
+    [style.font-size]="containtAndStyle.style.fontSize"
+    [style.line-height]="containtAndStyle.style.lineHeight"
+    [style.margin]="containtAndStyle.style.pMargin ? containtAndStyle.style.pMargin : 'none'"
+    [translate]="containtAndStyle.text"></p>
+    <p
+    *ngIf="containtAndStyle.text2"
+    [style.font-size]="containtAndStyle.style.fontSize"
+    [style.line-height]="containtAndStyle.style.lineHeight"
+    [style.margin]="containtAndStyle.style.p2Margin ? containtAndStyle.style.p2Margin : 'none'"
+    [translate]="containtAndStyle.text2"></p>
+
+    <strong
+    *ngFor="let text of containtAndStyle.strong"
+    class="strong-text"
+    [translate]="text"></strong>
+    <div
+    class="app-btn"
+    *ngIf="containtAndStyle.textBtn"
+    [routerLink]="containtAndStyle.link"
+    [translate]="containtAndStyle.textBtn">
+    </div>
+</div>

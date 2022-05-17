@@ -1,0 +1,34 @@
+#top-background {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    > div {
+        position: absolute;
+        width: max-content;
+        height: max-content;
+        &#form-green {
+            content:url("src/assets/images/draws/circle_light_blue.svg");
+        }
+        &#form-blue {
+            content:url("src/assets/images/draws/circle_blue.svg");
+        }
+        &#form-red {
+            content:url("src/assets/images/draws/circle_yellow.svg");
+        }
+    }
+    > div:first-of-type  {
+        width: 55vw;
+        left: -30vw;
+        top: calc((1000px - 40vw)/2);
+        transform: rotate(180deg);
+        -ms-transform: rotate(180deg); /* IE 9 */
+        -webkit-transform: rotate(180deg); /* Safari and Chrome */
+        -o-transform: rotate(180deg); /* Opera */
+        -moz-transform: rotate(180deg); /* Firefox */
+    }
+    > div:last-of-type  {
+        width: 60vw;
+        right: -20vw;
+        top: calc((500px - 70vw)/2);
+    }
+}

@@ -1,0 +1,207 @@
+@import 'assets/styles/fonts/icons';
+@import 'assets/styles/fonts/Roboto.scss';
+@import 'assets/styles/fonts/Nunito.scss';
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    h1 {
+        font-size : 38px !important;
+        line-height: 46.8px !important;
+    }
+    h2 {
+        font-size : 27px !important;
+        line-height: 31.4px !important;
+    }
+    h3 {
+        font-size : 18px !important;
+        line-height: 18.4px !important;
+    }
+    h4 {
+        font-size : 15px !important;
+        line-height: 20.4px !important;
+    }
+    strong, .p-strong {
+        font-size : 15px !important;
+        line-height: 20.4px !important;
+    }
+    p{
+        font-size : 15px !important;
+        line-height: 20.4px !important;
+    }
+
+    #intro-page {
+        &.section .img{
+            top: -70px;
+        }
+        .img {
+            position: absolute;
+            right: 0;
+            top: -55px;
+        }
+    }
+    #contact-form {
+        form {
+            padding: 10px !important;
+        }
+    }
+    #top-background {
+        top: 1.5rem;
+    }
+    nav {
+        .navbar-brand {
+            margin-right: 0 !important;
+        }
+        .collapse.show, .collapsing {
+            top: 4rem;
+        }
+    }
+ }
+// NOT Extra small devices (portrait phones and up than 576px)
+@media (min-width: 576px) {
+    nav {
+        .navbar-brand {
+            margin-right: 110px;
+        }
+    }
+    #not-found .img {
+        height: 530px;
+    }
+}
+// Small devices (landscape phones, 576px and up till 767.98px)
+@media (min-width: 576px) and (max-width: 767.98px) {
+    #top-background {
+        top: 9rem;
+    }
+}
+// Small and Medium devices (tablets, 576px and up till 991.98px)
+@media (min-width: 576px) and (max-width: 991.98px) {
+    h1 {
+        font-size : 42px !important;
+        line-height: 46.8px !important;
+    }
+    h2 {
+        font-size : 30px !important;
+        line-height: 31.4px !important;
+    }
+    h3 {
+        font-size : 22px !important;
+        line-height: 22.4px !important;
+    }
+    h4 {
+        font-size : 20px !important;
+        line-height: 24.4px !important;
+    }
+    strong, .p-strong {
+        font-size : 20px !important;
+        line-height: 24.4px !important;
+    }
+    p{
+        font-size : 20px !important;
+        line-height: 24.4px !important;
+    }
+    nav .collapse.show, .collapsing {
+        top: 5.05rem;
+    }
+}
+// Small devices (tablets, 768px and less)
+@media (max-width: 767.98px) {
+    #contact-us {
+        .contact-card {
+            padding: 2rem !important;
+        }
+    }
+}
+// Large devices (desktops, 992px and less)
+@media (max-width: 991.98px) {
+    nav .collapse.show, .collapsing {
+        padding: 1.5rem 2.25rem;
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 10px 16px 0px rgba(30, 64, 121, 0.1);
+        position: absolute;
+        left: 1.4rem;
+        width: calc(100% - 2.8rem);
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    #contact-us {
+        .contact-card {
+            > div {
+                text-align: center;
+            }
+        }
+    }
+    video {
+        height: 250px;
+    }
+    #footer {
+        flex-flow: column-reverse;
+        height: auto;
+        align-items: center !important;
+        padding: 2rem 3rem !important;
+        .contact-legal-products {
+            flex-wrap: wrap;
+            > div {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    #section-page-format-one {
+        > div {
+            order: 0 !important;
+        }
+        img {
+            height: 300px !important;
+            margin-top: 2rem;
+        }
+    }
+
+    #section-page-format-two {
+        padding-bottom: 0 !important;
+        > div.text-section {
+            order: 0 !important;
+        }
+        .img {
+            max-height: 200px !important;
+            margin-top: 2rem;
+        }
+    }
+    #menu-one-section-two {
+        img {
+            max-height: 300px !important;
+        }
+    }
+    app-vertical-card {
+        margin: 2rem auto !important;
+        .vertical-card-img {
+            max-height: 200px !important;
+        }
+    }
+    #menu-two-section-four app-vertical-card >div{
+        height: max-content !important;
+    }
+}
+// Medium and Large devices (tablets & desktops, 768 and up till 1199.98px)
+@media (min-width: 768px) and (max-width: 1199.98px) {
+    #top-background {
+        top: 10rem;
+    }
+}
+// Large devices (desktops, 992px and up till 1199.98px)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+// X-Large devices (desktops, 1200px and less)
+@media (max-width: 1199.98px) {
+    #not-found #top-menu {
+        justify-content: space-around;
+    }
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    #not-found #top-menu {
+        justify-content: space-between;
+    }
+}
+

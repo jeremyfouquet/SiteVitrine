@@ -1,0 +1,22 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/top-background.scss';
+
+#menu-one-section-one {
+    padding: 6rem calc((100vw - 1100px)/2);
+    .menu-one-section-one {
+        justify-content: space-between;
+    }
+    p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 26.9px;
+    }
+}
+#menu-one-section-two {
+    background: $medium-blue;
+    padding: 6rem calc((100vw - 1200px)/2);
+    img {
+        max-width: 750px;
+        max-height: 566px;
+    }
+}

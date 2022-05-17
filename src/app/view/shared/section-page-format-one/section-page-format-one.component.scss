@@ -1,0 +1,30 @@
+@import 'src/assets/styles/colors.scss';
+
+#section-page-format-one {
+    padding: 6rem calc((100vw - 1200px)/2);
+    align-items: center;
+    .title-grp {
+        padding-bottom: 30px;
+    }
+    p {
+        font-size: 18px;
+        line-height: 38px;
+    }
+    .list-grp:not(:last-child) {
+        padding-bottom: 30px;
+    }
+    ul {
+        padding-left: 1.8rem;
+    }
+    li {
+        font-size: 18px;
+        line-height: 26.9px;
+        font-weight: 500;
+        span {
+            color: $yellow;
+        }
+    }
+    img {
+        height: 500px;
+    }
+}

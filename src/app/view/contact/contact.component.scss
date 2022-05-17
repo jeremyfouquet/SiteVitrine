@@ -1,0 +1,41 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/top-background.scss';
+
+::ng-deep .form-control {
+    &::placeholder {
+        color: $blue;
+        line-height: 36px;
+    }
+    &:focus {
+        box-shadow: 0px 2px 16px 0px rgba(53,63,79,0.15);
+    }
+}
+
+#contact-form {
+    padding: 10rem calc((100vw - 1100px)/2);
+    form {
+        padding: 38px 68px;
+        background: $light-grey;
+        width: 100%;
+        border-radius: 30px;
+        box-shadow: 0px 10px 16px 0px rgba(30,64,121,0.1);
+        .form-group {
+            margin-top: 30px;
+        }
+        input, textarea {
+            font-size: 18px;
+            font-weight : 400;
+            color: $blue;
+            padding-left: 30px;
+            border-radius: 10px;
+            border: none;
+            min-height: 50px;
+        }
+        .app-btn {
+            border: none;
+            max-width: 167px;
+            float: right;
+        }
+
+    }
+}

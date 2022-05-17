@@ -1,0 +1,20 @@
+{
+    "extends": "../tsconfig.json",
+    "compilerOptions": {
+        "outDir": "../out-tsc/app",
+        "module": "es2015",
+        "types": [
+            "node"
+        ],
+        "plugins": [
+            {
+              "name": "typescript-tslint-plugin",
+              "configFile": "node_modules/@factory-utils/linter/rules/typescript.json"
+            }
+        ]
+    },
+    "exclude": [
+        "src/test.ts",
+        "**/*.spec.ts"
+    ]
+}

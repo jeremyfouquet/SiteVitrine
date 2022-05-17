@@ -1,0 +1,32 @@
+<div>
+  <img
+  class="brand-img"
+  src="assets/images/logo.svg"
+  [alt]="'_Logo_' | translate">
+  <p>Copyright © {{'_Director_' | translate}} {{actualYear}}</p>
+</div>
+<div
+class="col-md-8 contact-legal-products">
+  <div>
+    <h4 [translate]="'_Nav_4_'"></h4>
+    <p [translate]="'_Mail_'"></p>
+    <p [translate]="'_Address_'"></p>
+  </div>
+  <div>
+    <h4 [translate]="'_Footer_Section_Two_'"></h4>
+    <p
+    class="cursor-pointer"
+    routerLink="condition-generales"
+    [translate]="'_Terms_Of_Use_'"></p>
+    <p [translate]="'_Confidential_'"></p>
+  </div>
+  <div>
+    <h4 [translate]="'_Footer_Section_Three_'"></h4>
+    <p class="cursor-pointer"
+    routerLink="menu_1"
+    [translate]="'_Nav_2_'"></p>
+    <p class="cursor-pointer"
+    routerLink="condition-generales"
+    [translate]="'_Nav_3_'"></p>
+  </div>
+</div>

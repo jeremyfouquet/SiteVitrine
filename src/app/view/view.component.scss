@@ -1,0 +1,30 @@
+@import 'src/assets/styles/colors.scss';
+.view {
+    height: min-content;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+#navigation {
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    top: 0;
+    z-index: 10;
+    position: sticky;
+    &.nav-visible {
+        background: rgba(255, 255, 255, 0.95);
+        box-shadow: 0px 10px 16px 0px rgba(30, 64, 121, 0.1);
+    }
+}
+#contact-us {
+    padding: 6rem calc((100vw - 1200px)/2);
+    background: $medium-blue;
+    justify-content: center;
+    align-items: center;
+}
+#footer {
+    padding: 4rem 7rem;
+    background: $light-grey;
+    justify-content: space-between;
+}
+
+

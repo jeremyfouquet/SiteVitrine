@@ -1,0 +1,51 @@
+<div
+id="top-background"
+class="row">
+  <div id="form-red"></div>
+  <div id="form-blue"></div>
+</div>
+
+<app-intro-page
+[introPageContaint]="introPageContaint"
+></app-intro-page>
+
+<div
+id="contact-form"
+class="row">
+    <form
+    class="row Roboto-font"
+    [formGroup]="contactForm" (ngSubmit)="onSubmitForm()">
+      <div class="col-lg-6 form-group">
+        <input type="text" id="lastName" class="form-control" formControlName="lastName" placeholder="{{'_Contac_Form_lastName_' | translate}}">
+      </div>
+      <div class="col-lg-6 form-group">
+        <input type="text" id="firstName" class="form-control" formControlName="firstName" placeholder="{{'_Contac_Form_firstName_' | translate}}">
+      </div>
+      <div class="col-lg-6 form-group">
+        <input type="text" id="email" class="form-control" formControlName="email" placeholder="{{'_Contac_Form_email_' | translate}}">
+      </div>
+      <div class="col-lg-6 form-group">
+        <input type="text" id="telNumber" class="form-control" formControlName="telNumber" placeholder="{{'_Contac_Form_telNumber_' | translate}}">
+      </div>
+      <div class="col-12 form-group">
+        <input type="text" id="objectMessage" class="form-control" formControlName="objectMessage" placeholder="{{'_Contac_Form_objectMessage_' | translate}}">
+      </div>
+      <div class="col-12 form-group">
+        <textarea type="textarea" id="message" class="form-control" formControlName="message" placeholder="{{'_Contac_Form_message_' | translate}}"  rows="12"></textarea>
+      </div>
+      <div
+      class="col-12 form-group"
+      *ngIf="contactForm.invalid">
+        <small
+        class="float-right"
+        [translate]="'_Form_Invalid_'"></small>
+      </div>
+      <div class="col-12 form-group">
+        <button
+        [disabled]="contactForm.invalid"
+        type="submit"
+        class="app-btn"
+        [translate]="'_Form_Btn_'"></button>
+      </div>
+    </form>
+  </div>

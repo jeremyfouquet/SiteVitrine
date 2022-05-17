@@ -1,0 +1,55 @@
+@import 'src/assets/styles/colors.scss';
+.navbar-items {
+    display: inline-flex;
+}
+.navbar-toggler {
+    outline: none;
+}
+.navbar-brand {
+    min-width: 120px;
+}
+.nav-item {
+    margin-right: 60px;
+}
+// .navbar-toggler-icon {
+//      background-image: url('/assets/images/')
+// }
+.dropdown {
+    .btn {
+        &:focus {
+            box-shadow: none;
+        }
+        &:after {
+            -webkit-transition-duration: 0.3s;
+            -moz-transition-duration: 0.3s;
+            -o-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: -webkit-transform;
+            -moz-transition-property: -moz-transform;
+            -o-transition-property: -o-transform;
+            transition-property: transform;
+            position: relative;
+            top: 1px;
+            color: $blue;
+        }
+    }
+    &.show .btn:after {
+        transform: rotate(180deg);
+    }
+    .dropdown-menu {
+        min-width: max-content !important;
+        box-shadow: 0px 10px 16px 0px rgba(30, 64, 121, 0.1);
+        border: none;
+        left: -60px;
+        .dropdown-item {
+            &:not(.disabled) {
+                cursor: pointer;
+            }
+            &.disabled {
+                pointer-events: none;
+                color: $grey !important;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,24 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/top-background.scss';
+
+#home-section-one {
+    padding: 6rem calc((100vw - 1100px)/2);
+    .qualities {
+        justify-content: space-between;
+    }
+}
+
+#home-section-two {
+    background: $light-grey;
+    padding: 6rem calc((100vw - 1200px)/2);
+    .home-section-two {
+        justify-content: center;
+    }
+}
+
+#home-section-three {
+    padding: 6rem calc((100vw - 1200px)/2);
+    .home-section-three {
+        justify-content: space-between;
+    }
+}

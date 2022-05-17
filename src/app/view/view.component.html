@@ -1,0 +1,17 @@
+<div
+class="view container-fluid">
+    <app-navigation
+    id="navigation"
+    class="row"></app-navigation>
+    <div
+    id="main">
+        <router-outlet (activate)="onActivate($event)"></router-outlet>
+    </div>
+    <app-contact-us
+    *ngIf="contactIsVisible"
+    id="contact-us"
+    class="row"></app-contact-us>
+    <app-footer
+    id="footer"
+    class="row"></app-footer>
+</div>

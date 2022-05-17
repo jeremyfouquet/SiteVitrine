@@ -1,0 +1,25 @@
+@import 'src/assets/styles/colors.scss';
+.not-found {
+    height: min-content;
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}
+#top-menu {
+    padding: 0.5rem calc((100vw - 1200px)/2);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.app-btn {
+    border: none;
+    max-width: 167px;
+}
+#bottom-menu {
+    text-align: center;
+    padding: 5vh calc((100vw - 1200px)/2);
+}
+.img{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}

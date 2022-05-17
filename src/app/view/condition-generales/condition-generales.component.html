@@ -1,0 +1,30 @@
+<div
+id="top-background"
+class="row">
+  <div id="form-blue"></div>
+  <div id="form-green"></div>
+</div>
+
+<app-intro-page
+[introPageContaint]="introPageContaint"
+></app-intro-page>
+
+<div
+id="articles"
+class="row">
+  <div
+  class="col-12 article"
+  *ngFor="let article of articles">
+    <h3
+    [translate]="article.title"></h3>
+      <p
+      *ngFor="let text of article.text"
+      [style.margin-top]="text.marginTop">
+        <span
+        *ngFor="let string of text.string"
+        [style.font-weight]="string.weight"
+        [class.Roboto-font]="string.weight === '800'"
+        [translate]="string.contain"></span>
+      </p>
+  </div>
+</div>

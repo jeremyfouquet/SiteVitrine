@@ -1,0 +1,13 @@
+@import 'src/assets/styles/colors.scss';
+@import 'src/assets/styles/top-background.scss';
+
+
+#articles {
+    padding: 10rem calc((100vw - 1200px)/2);
+    .article {
+        margin-bottom: 90px;
+        span {
+            font-size: 18px;
+        }
+    }
+}

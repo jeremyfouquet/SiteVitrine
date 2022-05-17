@@ -1,0 +1,29 @@
+@import 'src/assets/styles/colors.scss';
+img {
+    width: 170px;
+    height: auto;
+    padding: 5px 0 27px 0;
+}
+.contact-legal-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    & >div {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        & >p {
+            margin-bottom: 15px;
+            outline: none;
+        }
+    }
+}
+h4 {
+    margin-bottom: 23px;
+}
+p {
+    font-size: 14px;
+    line-height: 28.9px;
+    color: $blue;
+}

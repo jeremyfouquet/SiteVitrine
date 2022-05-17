@@ -1,0 +1,40 @@
+<div
+id="section-page-format-two"
+class="row">
+    <div
+    class="col-lg-6 text-section"
+    [style.order]="sectionTwoData.orderInvers ? 2 : ''">
+        <div class="d-flex flex-row align-items-center">
+            <h2
+            class="number-puce flex-shrink-1 pr-3"
+            [ngClass]="sectionTwoData.nbColor">{{sectionTwoData.nb}}</h2>
+            <h2 class="w-100">
+                {{sectionTwoData.title | translate}}
+            </h2>
+        </div>
+        <p
+        [translate]="sectionTwoData.text"></p>
+        <p
+        class="mt-2"
+        *ngIf="sectionTwoData.text2"
+        [translate]="sectionTwoData.text2"></p>
+        <ul *ngIf="sectionTwoData.li">
+            <li
+            [style.list-style-image]="li.puce"
+            *ngFor="let li of sectionTwoData.li">
+                <span
+                class="Roboto-font"
+                [ngClass]="li.color">
+                {{li.title | translate}}
+                </span>
+                {{li.text | translate}}
+            </li>
+        </ul>
+    </div>
+    <div
+    class="col-lg-6 img">
+        <img
+        [src]="sectionTwoData.src"
+        [alt]="sectionTwoData.alt | translate">
+    </div>
+</div>

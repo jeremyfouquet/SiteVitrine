@@ -1,0 +1,60 @@
+<div
+id="top-background"
+class="row">
+    <div id="form-green"></div>
+    <div id="form-blue"></div>
+</div>
+
+<app-intro-page
+[introPageContaint]="introPageContaint"
+></app-intro-page>
+
+<div
+id="home-section-one"
+class="row text-center">
+    <h2
+    class="col-12 pb-5"
+    [translate]="'_Home_Title_Section_One_'"></h2>
+    <div
+    class="col-12 row home-section-one">
+        <ng-container
+        *ngFor="let card of cardOne">
+            <app-vertical-card
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>
+
+<div
+id="home-section-two"
+class="row text-center pr-0 pl-0">
+    <h2
+    class="col-12 pb-5"
+    [translate]="'_Home_Title_Section_Two_'"></h2>
+    <div
+    class="col-12 row home-section-two">
+        <ng-container
+        *ngFor="let card of cardTwo">
+            <app-vertical-card
+            class="p-3"
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>
+
+<div
+id="home-section-three"
+class="row text-center">
+    <h2
+    class="col-12 pb-5"
+    [translate]="'_Home_Title_Section_Three_'"></h2>
+    <div
+    class="col-12 row home-section-three">
+        <ng-container
+        *ngFor="let card of cardThree">
+            <app-vertical-card
+            style="margin: 20px auto; max-width: 90vw;"
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<div
+id="not-found"
+class="not-found container-fluid">
+  <div id="top-menu">
+    <div
+    class="navbar-brand" >
+        <img
+        src="assets/images/logo.svg"
+        [alt]="'_Logo_' | translate">
+    </div>
+    <button
+    type="submit"
+    class="app-btn"
+    routerLink="/view/home"
+    [translate]="'_Back_Home_'"></button>
+  </div>
+  <div
+  id="bottom-menu"
+  class="row">
+    <h1 class="col-12">
+      {{ '_404_Title_' | translate}}
+      <span class="yellow-color" [translate]="'_404_Hightlight_'">
+      </span>
+    </h1>
+    <div
+    class="img col-12">
+        <img
+        src="assets/images/illustrations/404.svg"
+        [alt]="'_404_Icon_Error_' | translate">
+    </div>
+    <button
+    type="submit"
+    class="app-btn"
+    (click)="back()"
+    [translate]="'_Back_'"></button>
+  </div>
+</div>

@@ -1,0 +1,60 @@
+<div
+id="intro-page"
+class="row"
+[class.section]="introPageContaint.section">
+    <div
+    class="col-sm-6 text-intro-page"
+    [style.order]="introPageContaint.orderInvers ? 2 : ''">
+        <h1
+        *ngIf="!introPageContaint.section">
+            {{introPageContaint.title | translate}}
+        </h1>
+        <h1
+            *ngIf="!introPageContaint.section"
+            class="yellow-color"
+            [translate]="introPageContaint.titleHighlight"></h1>
+        <h2
+        *ngIf="introPageContaint.section"
+        class="col-6 m-0 p-0"
+        [translate]="introPageContaint.title"></h2>
+        <p
+        *ngFor="let text of introPageContaint.text; let index = index"
+        [class.col-sm-10]="!introPageContaint.section"
+        [class.col-6]="!introPageContaint.section"
+        [translate]="text"></p>
+        <div
+        *ngIf="introPageContaint.btn"
+        [ngClass]="{
+            'col': true,
+            'app-btn-option': true,
+            'app-btn': !introPageContaint.section,
+            'app-btn-inverse': introPageContaint.section
+          }"
+        [routerLink]="introPageContaint.link"
+        [translate]="introPageContaint.btn">
+        </div>
+        <div
+        class="strong-contain"
+        *ngIf="introPageContaint.strong">
+            <img
+            class="col-1 p-0"
+            [src]="introPageContaint.strongImg" [alt]="introPageContaint.strongAlt | translate">
+            <div>
+                <p
+                *ngFor="let strong of introPageContaint.strong"
+                class="p-strong"
+                [translate]="strong"
+                >
+                </p>
+            </div>
+        </div>
+    </div>
+    <div
+    [style.width]="introPageContaint.section ? '345px' : '479px'"
+    [style.height]="introPageContaint.section ? '360px' : '510px'"
+    class="col-6 img">
+        <img
+        [src]="introPageContaint.src"
+        [alt]="introPageContaint.alt | translate">
+    </div>
+</div>

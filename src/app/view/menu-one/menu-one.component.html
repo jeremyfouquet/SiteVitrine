@@ -1,0 +1,56 @@
+<div
+id="top-background"
+class="row">
+    <div id="form-red"></div>
+    <div id="form-green"></div>
+</div>
+
+<app-intro-page
+[introPageContaint]="introPageContaint"
+></app-intro-page>
+
+<div
+id="menu-one-section-one"
+class="row text-center">
+    <h2
+    class="col-12 pb-4"
+    [translate]="'_Menu_One_Section_One_Title_'"></h2>
+    <p
+    class="col-7 pb-2"
+    [translate]="'_Menu_One_Section_One_Title_Text_One_'"></p>
+    <p
+    class="col-7 pb-5"
+    [translate]="'_Menu_One_Section_One_Title_Text_Two_'"></p>
+    <div
+    class="col-12 row menu-one-section-one">
+        <ng-container
+        *ngFor="let card of cardOne">
+            <app-vertical-card
+            [containtAndStyle]="card"></app-vertical-card>
+        </ng-container>
+    </div>
+</div>
+
+
+<div
+id="menu-one-section-two"
+class="row text-center">
+    <h2
+    class="col-12 pb-4"
+    [translate]="'_Menu_One_Section_Two_Title_'"></h2>
+    <img
+    src="assets/images/illustrations/IMAGE.svg"
+    [alt]="'_Menu_One_Section_Two_Icon_' | translate">
+</div>
+
+<app-section-page-format-one
+[sectionOneData]="DataOne">
+</app-section-page-format-one>
+
+<app-section-page-format-one
+[sectionOneData]="DataTwo">
+</app-section-page-format-one>
+
+<app-section-page-format-one
+[sectionOneData]="DataThree">
+</app-section-page-format-one>

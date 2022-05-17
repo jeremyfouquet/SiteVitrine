@@ -1,0 +1,20 @@
+@import 'src/assets/styles/colors.scss';
+.boxShadow {
+    box-shadow: 0px 10px 16px 0px rgba(30,64,121,0.1);
+}
+.app-btn {
+    max-width: 167px;
+}
+.strong-text:first-of-type, .strong-text:last-of-type {
+    margin-top: 2rem;
+}
+.img-top {
+    width: 210px;
+    height: 184px;
+    position: absolute;
+    top: -92px;
+}
+.vertical-card-img img {
+    width: auto;
+    height: 100%;
+}

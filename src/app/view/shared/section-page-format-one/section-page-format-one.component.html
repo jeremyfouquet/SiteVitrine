@@ -1,0 +1,38 @@
+<div
+id="section-page-format-one"
+class="row"
+[style.background]="sectionOneData.background? sectionOneData.background : 'none'">
+    <div
+    class="col-lg-5 col-10 m-auto"
+    [style.order]="sectionOneData.orderInvers ? 2 : ''">
+      <div class="title-grp">
+        <h2
+        [translate]="sectionOneData.title"></h2>
+        <p
+        *ngIf="sectionOneData.subtitle"
+        [translate]="sectionOneData.subtitle"></p>
+      </div>
+      <div
+      class="list-grp"
+      *ngFor="let list of sectionOneData.listGrp">
+        <h3
+        [className]="list.listColor">
+        {{list.listTitle | translate}}</h3>
+        <ul 
+        [style.list-style-image]="list.puce">
+          <li
+          *ngFor="let li of list.li; let index = index">
+          {{li | translate}}
+          <span
+          *ngIf="list.span && list.span[index].length > 0">
+          {{list.span[index] | translate}}
+          </span>
+        </li>
+        </ul>
+      </div>
+    </div>
+    <img 
+    class="col-lg-7"
+    [src]="sectionOneData.src" 
+    [alt]="sectionOneData.alt | translate">
+</div>

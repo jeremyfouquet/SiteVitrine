@@ -1,0 +1,44 @@
+
+
+<nav class="navbar navbar-expand-lg w-100 flex-nowrap navbar-light">
+    <a
+    class="navbar-brand"
+    routerLink="home"
+    routerLinkActive="active">
+        <img
+        src="assets/images/logo.svg"
+        [alt]="'_Logo_' | translate">
+    </a>
+    <div class="navbar-items">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation-app" aria-controls="navigation-app" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navigation-app">
+        <ul class="navbar-nav">
+          <li
+          *ngFor="let item of navigation"
+          class="nav-item">
+              <a
+              [routerLink]="item.link"
+              routerLinkActive="active"
+              [translate]="item.translate"></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="dropdown">
+        <button class="btn dropdown-toggle blue-app-color" href="#" role="button" id="language-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {{language}}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="language-dropdown">
+          <a
+          *ngFor="let lang of languageList"
+          class="dropdown-item"
+          [class.disabled]="lang.code === language"
+          (click)="changeLanguage(lang.code)">{{lang.label | translate}}</a>
+        </div>
+      </div>
+    </div>
+
+  </nav>
+

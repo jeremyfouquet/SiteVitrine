@@ -1,0 +1,53 @@
+{
+  "checksum": {
+    "previous": "2a1211e5b392ada6f081d3b7139a1666862daa08c83a6741d41796c99ebd1ccb",
+    "current": "2a1211e5b392ada6f081d3b7139a1666862daa08c83a6741d41796c99ebd1ccb"
+  },
+  "fonts": [
+    "../../src/assets/fonts/icons/icons.ttf",
+    "../../src/assets/fonts/icons/icons.svg",
+    "../../src/assets/fonts/icons/icons.woff",
+    "../../src/assets/fonts/icons/icons.eot",
+    "../../src/assets/fonts/icons/icons.woff2"
+  ],
+  "glyphs": {
+    "logo": {
+      "codepoint": 61697,
+      "source": "svg/logo.svg"
+    }
+  },
+  "options": {
+    "autowidth": true,
+    "config": "fontcustom.yml",
+    "copyright": "",
+    "css3": false,
+    "css_selector": ".i-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 24,
+    "font_em": 1800,
+    "font_name": "icons",
+    "force": true,
+    "input": {
+      "templates": "svg/",
+      "vectors": "svg/"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "css/",
+      "fonts": "../../src/assets/fonts/icons",
+      "preview": "."
+    },
+    "preprocessor_path": null,
+    "quiet": false,
+    "templates": [
+      "scss",
+      "preview"
+    ]
+  },
+  "templates": [
+    "css/_icons.scss",
+    "./icons-preview.html"
+  ]
+}

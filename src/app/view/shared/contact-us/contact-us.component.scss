@@ -1,0 +1,14 @@
+@import 'src/assets/styles/colors.scss';
+.contact-card {
+    background: $white;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 7rem;
+    > div {
+        padding: 0 !important;
+    }
+    .app-btn {
+        max-width: 197px;
+    }
+}
