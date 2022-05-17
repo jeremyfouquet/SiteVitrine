@@ -2,19 +2,13 @@
 
 Pour voir le rendu suivre le lien => [Site](https://jeremyfouquet.github.io/SiteVitrine.gthub.io/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
 
 
 ## Requirements
 
 ### NPM
 Upgrade to npm 6
-
-## Configuration (REQUIRED FOR ALL NEW PROJECTS)
-
-### Application
-1. Create a new file ```config.json``` in /src/config
-2. Configure application parameters by following examples in ```config.json.example```
 
 ## Local installation
 ```
@@ -63,9 +57,6 @@ npm run test
 ```
 npm run e2e
 ```
-
-## Angular Style Guide
-https://confluence.advanced-schema.com/display/AG/Angular2+Style+Guide
 
 ## Add new elements in icons font
 Copy new svg(s) inside custom-fonts/icons/svg
