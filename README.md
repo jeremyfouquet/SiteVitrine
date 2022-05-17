@@ -19,30 +19,6 @@ npm run build:[dev/prod]:[jit/aot] (build:prod:aot by default)
 ```
 And go to localhost:4200 (default port, otherwise see logs in the console)
 
-## Install pre-commit script
-```
-$ vim .git/hooks/pre-commit
-```
-```
-#!/usr/bin/env bash
-
-npm run build
-PASS=$?
-
-if [ ${PASS} == 0 ]; then
-    npm run lint
-    PASS=$?
-fi
-
-if [ ${PASS} != 0 ]; then
-    echo "Compilation or lint failed. Please fix it, and try to commit again."
-    exit 1;
-fi
-```
-```
-$ chmod +x .git/hooks/pre-commit
-```
-
 ## Lint
 ```
 npm run lint
