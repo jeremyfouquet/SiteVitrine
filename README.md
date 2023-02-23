@@ -1,6 +1,6 @@
-# Site_vitrine
+# Site Vitrine
 
-Pour voir le rendu suivre le lien => [Site](https://jeremyfouquet.github.io/SiteVitrine.github.io/)
+Pour voir le rendu suivre le lien => [Site](https://jeremyfouquet.github.io/SiteVitrine/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.10.
 
